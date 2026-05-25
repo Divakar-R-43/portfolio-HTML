@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="keywords" content="HTML, CSS, Portfolio, Accessibility">
+  <meta name="author" content="Your Name">
+
+  <title>My Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0077ff;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#222;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    section{
+      padding:40px;
+      margin:20px;
+      background:white;
+      border-radius:10px;
+    }
+
+    h2{
+      margin-bottom:15px;
+      color:#0077ff;
+    }
+
+    .project{
+      background:#eee;
+      padding:15px;
+      margin-top:10px;
+      border-left:5px solid #0077ff;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+    }
+
+    input, textarea{
+      padding:10px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button{
+      background:#0077ff;
+      color:white;
+      padding:12px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#0056cc;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Web Developer | Student</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <article>
+        <p>
+          Hello! I am learning Web Development.
+          I create responsive and accessible websites using HTML and CSS.
+        </p>
+      </article>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <article class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website.</p>
+      </article>
+
+      <article class="project">
+        <h3>Login Page</h3>
+        <p>Simple login form using HTML and CSS.</p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form aria-label="Contact Form">
+
+        <label for="name">Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          aria-label="Enter your name"
+          required>
+
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          aria-label="Enter your email"
+          required>
+
+        <label for="message">Message</label>
+        <textarea 
+          id="message" 
+          rows="5"
+          aria-label="Enter your message">
+        </textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
